@@ -1,0 +1,23 @@
+{
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/tallesl/safe-require/issues"
+  },
+  "description": "safe version of require that returns undefined rather than throwing an error when the module is not found",
+  "homepage": "https://github.com/tallesl/safe-require",
+  "keywords": [
+    "safe",
+    "require"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "safe-require",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/safe-require.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
