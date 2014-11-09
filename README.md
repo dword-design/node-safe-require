@@ -14,7 +14,7 @@ This was useful for me when loading optional JSON configuration files.
 
 ```javascript
 $ npm install safe-require
-safe-require@1.0.0 node_modules/safe-require
+safe-require@1.0.1 node_modules/safe-require
 $ node
 > var safeRequire = require('safe-require')
 undefined
