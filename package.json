@@ -4,13 +4,16 @@
     "url": "https://github.com/tallesl/safe-require/issues"
   },
   "description": "safe version of require that returns undefined rather than throwing an error when the module is not found",
+  "directories": {
+    "lib": "./lib"
+  },
   "homepage": "https://github.com/tallesl/safe-require",
   "keywords": [
     "safe",
     "require"
   ],
-  "license": "ISC",
-  "main": "index.js",
+  "license": "Fair",
+  "main": "./lib/safe-require.js",
   "name": "safe-require",
   "repository": {
     "type": "git",
@@ -21,3 +24,4 @@
   },
   "version": "1.0.0"
 }
+

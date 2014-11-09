@@ -27,3 +27,4 @@ undefined
 > safeRequire('nonexistent') // require('nonexistent') would throw "Cannot find module 'nonexistent'"
 undefined
 ```
+
