@@ -1,20 +1,30 @@
-# Safe `require()`
+# safe-require
 
-[![dependencies](https://david-dm.org/tallesl/safe-require.png)](https://david-dm.org/tallesl/safe-require)
-[![devDependencies](https://david-dm.org/tallesl/safe-require/dev-status.png)](https://david-dm.org/tallesl/safe-require#info=devDependencies)
-[![npm module](https://badge.fury.io/js/safe-require.png)](http://badge.fury.io/js/safe-require)
+[![][build-img]][build]
+[![][coverage-img]][coverage]
+[![][dependencies-img]][dependencies]
+[![][devdependencies-img]][devdependencies]
+[![][npm-img]][npm]
 
-[![npm](https://nodei.co/npm/safe-require.png?mini=true)](https://nodei.co/npm/safe-require/)
+A function that acts pretty much like [require](http://nodejs.org/api/globals.html#globals_require) but returns
+undefined when the module is not found (instead of throwing an exception).
 
-[A function](index.js) that acts pretty much like [`require()`](http://nodejs.org/api/globals.html#globals_require) but with the difference of returning *undefined* when the module is not found (instead of throwing *Cannot find module*).
-
-This was useful for me when loading optional JSON configuration files.
+[build]:               https://travis-ci.org/tallesl/node-safe-require
+[build-img]:           https://travis-ci.org/tallesl/node-safe-require.svg
+[coverage]:            https://coveralls.io/r/tallesl/node-safe-require?branch=master
+[coverage-img]:        https://coveralls.io/repos/tallesl/node-safe-require/badge.svg?branch=master
+[dependencies]:        https://david-dm.org/tallesl/node-safe-require
+[dependencies-img]:    https://david-dm.org/tallesl/node-safe-require.svg
+[devdependencies]:     https://david-dm.org/tallesl/node-safe-require#info=devDependencies
+[devdependencies-img]: https://david-dm.org/tallesl/node-safe-require/dev-status.svg
+[npm]:                 https://www.npmjs.com/package/safe-require
+[npm-img]:             https://badge.fury.io/js/safe-require.svg
 
 ## Usage
 
-```javascript
+```
 $ npm install safe-require
-safe-require@1.0.1 node_modules/safe-require
+(...)
 $ node
 > var safeRequire = require('safe-require')
 undefined
@@ -27,4 +37,3 @@ undefined
 > safeRequire('nonexistent') // require('nonexistent') would throw "Cannot find module 'nonexistent'"
 undefined
 ```
-
