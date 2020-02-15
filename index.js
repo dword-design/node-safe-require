@@ -3,7 +3,6 @@
 const path = require('path')
 
 module.exports = (p) => {
-  
   if (p.startsWith(`.${path.sep}`) || p.startsWith(`..${path.sep}`)) {
     p = path.resolve(path.dirname(module.parent.filename), p)
   }
